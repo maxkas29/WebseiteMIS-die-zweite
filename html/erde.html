@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erde - Natur Hautnah</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Comic+Neue:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/animations.css">
+</head>
+
+<body class="erde-page">
+
+    <!-- Navigation / Back Button -->
+    <div class="fixed-top p-3">
+        <a href="../index.html" class="btn btn-dark rounded shadow p-3"
+            style="width: 100px; height: 60px; display: flex; align-items: center; justify-content: center;">
+            Zurück
+        </a>
+    </div>
+
+    <!-- Title Section (Surface) -->
+    <div
+        class="container-fluid min-vh-100 d-flex flex-column align-items-center justify-content-start pt-5 text-center text-white text-shadow-dark">
+        <h1 class="font-heading display-1 mt-5" style="color: white; text-shadow: 2px 2px 4px #4e342e;">Die Erde</h1>
+        <p class="fs-3 text-white" style="text-shadow: 1px 1px 2px #4e342e;">Scrolle nach unten, um in den Boden zu
+            schauen!</p>
+        <div class="mt-5 animate-bounce">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white"
+                class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 7.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- Depth Zone 1: Roots & Worms -->
+    <div class="container min-vh-100 d-flex align-items-center justify-content-start">
+        <div class="info-card p-4 rounded shadow bg-white" style="max-width: 500px; opacity: 0.9;">
+            <h2 style="color: var(--color-erde-text); font-family: var(--font-heading);">Wurzeln & Würmer</h2>
+            <p>Direkt unter dem Gras ist ganz schön was los! Insekten, Regenwürmer und die Wurzeln der Bäume teilen sich
+                diesen Platz.</p>
+            <img src="https://placehold.co/400x200?text=Wurzeln+und+Würmer" class="img-fluid rounded mt-2"
+                alt="Wurzeln">
+        </div>
+    </div>
+
+    <!-- Depth Zone 2: Stones & Caves -->
+    <div class="container min-vh-100 d-flex align-items-center justify-content-end">
+        <div class="info-card p-4 rounded shadow bg-white" style="max-width: 500px; opacity: 0.9;">
+            <h2 style="color: #5d4037; font-family: var(--font-heading);">Steine & Höhlen</h2>
+            <p>Weiter unten wird die Erde fester. Hier findest du große Steine und manchmal sogar versteckte Höhlen!</p>
+            <img src="https://placehold.co/400x200?text=Höhle" class="img-fluid rounded mt-2" alt="Höhle">
+        </div>
+    </div>
+
+    <!-- Depth Zone 3: Deep Earth / Magma -->
+    <div class="container min-vh-100 d-flex align-items-center justify-content-center">
+        <div class="info-card p-4 rounded shadow bg-white" style="max-width: 600px; opacity: 0.9;">
+            <h2 style="color: #bf360c; font-family: var(--font-heading);">Tief im Inneren</h2>
+            <p>Ganz tief unten wird es richtig heiß! Hier gibt es Schätze wie Edelsteine oder Fossilien von
+                Dinosauriern.</p>
+            <img src="https://placehold.co/400x200?text=Schatz+oder+Fossil" class="img-fluid rounded mt-2" alt="Schatz">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 text-white">
+        <p>&copy; 2025 Natur Hautnah - <a href="impressum.html" class="text-white">Impressum</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show-modal');
+                }
+            });
+        });
+        document.querySelectorAll('.info-card').forEach((el) => observer.observe(el));
+    </script>
+</body>
+
+</html>

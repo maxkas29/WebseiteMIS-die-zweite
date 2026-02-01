@@ -201,3 +201,37 @@ body.wasser-page {
         transform: translateY(-10px);
     }
 }
+
+@keyframes bounce-up {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(20px);
+    }
+
+    60% {
+        transform: translateY(10px);
+    }
+}
+
+/* Erde Page Styles */
+body.erde-page {
+    background: url('../assets/img/background/earth_vertical.png') no-repeat center top scroll;
+    background-size: cover;
+    min-height: 300vh;
+}
+
+/* Luft Page Styles */
+body.luft-page {
+    background: url('../assets/img/background/air_vertical.png') no-repeat center bottom scroll;
+    /* Align bottom so space is top */
+    background-size: cover;
+    min-height: 300vh;
+}
