@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natur Hautnah</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Comic+Neue:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/animations.css">
+    <meta name="description" content="Eine kinderfreundliche Webseite über die Natur: Erde, Luft und Wasser.">
+</head>
+
+<body>
+
+    <div class="main-container">
+        <header class="text-center pt-5">
+            <h1 class="main-title">Natur Hautnah</h1>
+            <p class="sub-title">Klick auf einen der Themen</p>
+        </header>
+
+        <div class="container mt-4">
+            <div class="row justify-content-center text-center">
+
+                <!-- Erde -->
+                <div class="col-lg-4 col-md-4 col-12 mb-4 hover">
+                    <a href="erde.html" class="theme-link">
+                        <div class="icon-wrapper border-erde">
+                            <img src="assets/img/icon_earth.png" alt="Erde" class="theme-icon">
+                        </div>
+                        <h2 class="icon-title text-erde">Erde</h2>
+                    </a>
+                </div>
+
+                <!-- Luft -->
+                <div class="col-lg-4 col-md-4 col-12 mb-4 hover delay-1">
+                    <a href="luft.html" class="theme-link">
+                        <div class="icon-wrapper border-luft">
+                            <!-- Placeholder if image missing -->
+                            <img src="assets/img/icon_air.png"
+                                onerror="this.src='https://placehold.co/300x300?text=Luft'" alt="Luft"
+                                class="theme-icon">
+                        </div>
+                        <h2 class="icon-title text-luft">Luft</h2>
+                    </a>
+                </div>
+
+                <!-- Wasser -->
+                <div class="col-lg-4 col-md-4 col-12 mb-4 hover delay-2">
+                    <a href="./html/wasser.html" class="theme-link">
+                        <div class="icon-wrapper border-wasser">
+                            <img src="assets/img/icon_water.png" alt="Wasser" class="theme-icon">
+                        </div>
+                        <h2 class="icon-title text-wasser">Meere und Gewässer</h2>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="text-center mt-5 pb-3 fixed-bottom">
+            <div class="container d-flex justify-content-between text-white small-text">
+                <span>&copy; 2025 Natur Hautnah</span>
+                <a href="html/impressum.html" class="text-white text-decoration-none">Impressum</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meere und Gewässer - Natur Hautnah</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Comic+Neue:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/animations.css">
+</head>
+
+<body class="wasser-page">
+
+    <!-- Navigation / Back Button -->
+    <div class="fixed-top p-3">
+        <a href="../index.html" class="btn btn-light rounded-circle shadow p-3"
+            style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                class="bi bi-house-door-fill" viewBox="0 0 16 16" style="color: var(--color-blue-dark);">
+                <path
+                    d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5" />
+            </svg>
+        </a>
+    </div>
+
+    <!-- Title Section -->
+    <div class="container-fluid min-vh-100 d-flex flex-column align-items-center justify-content-center text-center text-white"
+        style="background: rgba(0,0,0,0.2);">
+        <h1 class="font-heading display-1" style="font-family: var(--font-heading); text-shadow: 2px 2px 4px #000;">
+            Meere und Gewässer</h1>
+        <p class="fs-3" style="text-shadow: 1px 1px 2px #000;">Scrolle nach unten, um abzutauchen!</p>
+        <div class="mt-5 animate-bounce">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white"
+                class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 7.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- Depth Zone 1: The Surface -->
+    <div class="container min-vh-100 d-flex align-items-center justify-content-start">
+        <div class="info-card p-4 rounded shadow bg-white" style="max-width: 500px; opacity: 0.9;">
+            <h2 style="color: var(--color-blue-dark); font-family: var(--font-heading);">Die Oberfläche</h2>
+            <p>Hier oben schwimmen viele kleine Fische und Enten. Das Wasser ist hell und warm, weil die Sonne noch gut
+                hindurchscheinen kann.</p>
+            <img src="https://placehold.co/400x200?text=Fische+an+Oberfläche" class="img-fluid rounded mt-2"
+                alt="Fische">
+        </div>
+    </div>
+
+    <!-- Depth Zone 2: The Twilight Zone -->
+    <div class="container min-vh-100 d-flex align-items-center justify-content-end">
+        <div class="info-card p-4 rounded shadow bg-white" style="max-width: 500px; opacity: 0.9;">
+            <h2 style="color: var(--color-teal-dark); font-family: var(--font-heading);">Die Dämmerzone</h2>
+            <p>Es wird dunkler und kühler. Hier leben Wale und Haie! Pflanzen wachsen hier kaum noch, weil das
+                Sonnenlicht schwächer wird.</p>
+            <img src="https://placehold.co/400x200?text=Hai+oder+Wal" class="img-fluid rounded mt-2" alt="Hai">
+        </div>
+    </div>
+
+    <!-- Depth Zone 3: The Deep Sea -->
+    <div class="container min-vh-100 d-flex align-items-center justify-content-center">
+        <div class="info-card p-4 rounded shadow bg-white" style="max-width: 600px; opacity: 0.9;">
+            <h2 style="color: #0d1b2a; font-family: var(--font-heading);">Die Tiefsee</h2>
+            <p>Brrr, hier ist es stockfinster und eiskalt! Aber wusstest du, dass hier Tiere leben, die leuchten können?
+                Das nennt man Biolumineszenz.</p>
+            <img src="https://placehold.co/400x200?text=Anglerfisch" class="img-fluid rounded mt-2" alt="Tiefsee">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 text-white">
+        <p>&copy; 2025 Natur Hautnah - <a href="impressum.html" class="text-white">Impressum</a></p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Simple Scroll Animation Script -->
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show-modal');
+                }
+            });
+        });
+
+        const hiddenElements = document.querySelectorAll('.info-card');
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
+</body>
+
+</html>
