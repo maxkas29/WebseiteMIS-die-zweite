@@ -235,3 +235,16 @@ body.luft-page {
     background-size: cover;
     min-height: 300vh;
 }
+
+.btn-orange {
+    background-color: var(--color-orange);
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-orange:hover {
+    background-color: #e56b1f;
+    color: white;
+    transform: scale(1.05);
+}
