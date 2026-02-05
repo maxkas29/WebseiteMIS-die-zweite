@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natur in Echt - Natur Hautnah</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Comic+Neue:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- Material Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../style/style.css">
+
+    <style>
+        /* Minimal custom styles for fonts as requested, layout relies on Bootstrap */
+        :root {
+            --font-heading: 'Chewy', cursive;
+            --font-body: 'Comic Neue', cursive;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--color-mint-light);
+            /* Theme background */
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: var(--font-heading);
+            color: var(--color-blue-dark);
+        }
+
+        .theme-orange-text {
+            color: var(--color-orange);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Back Button (Orange Circle) -->
+    <div class="fixed-top p-3">
+        <a href="../index.html"
+            class="btn btn-orange rounded-circle shadow p-3 d-flex align-items-center justify-content-center"
+            style="width: 60px; height: 60px;">
+            <span class="material-symbols-outlined text-white" style="font-size: 32px;">home</span>
+        </a>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container py-5">
+
+        <!-- Header Section -->
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h1 class="display-3 theme-orange-text">Die Natur Hautnah Erleben</h1>
+            </div>
+        </div>
+
+        <!-- Content Grid (2x2) -->
+        <div class="row g-4">
+
+            <!-- Attraction 1 -->
+            <div class="col-12 col-lg-6">
+                <div class="card h-100 bg-secondary-subtle border-0 shadow-sm text-center py-5 px-3">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <h2 class="card-title mb-3">Dinosaurier-Park Münchehagen</h2>
+                        <p class="card-text fs-5">Wandere auf echten Dinosaurier-Spuren! Ein riesiges Freilichtmuseum
+                            mit lebensgroßen Dinos.</p>
+                        <div class="mt-3">
+                            <span class="badge bg-success text-white">Erde</span>
+                        </div>
+                        <a href="https://www.dinopark.de/" target="_blank"
+                            class="btn btn-orange mt-4 text-white">Webseite
+                            besuchen</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Attraction 2 -->
+            <div class="col-12 col-lg-6">
+                <div class="card h-100 bg-secondary-subtle border-0 shadow-sm text-center py-5 px-3">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <h2 class="card-title mb-3">Erlebnis-Zoo Hannover</h2>
+                        <p class="card-text fs-5">Weltreise an einem Tag! Entdecke Tiere aus Afrika, Kanada und Indien
+                            in spektakulären Themenwelten.</p>
+                        <div class="mt-3">
+                            <span class="badge bg-success text-white">Erde</span>
+                        </div>
+                        <a href="https://www.erlebnis-zoo.de/" target="_blank"
+                            class="btn btn-orange mt-4 text-white">Webseite
+                            besuchen</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Attraction 3 -->
+            <div class="col-12 col-lg-6">
+                <div class="card h-100 bg-secondary-subtle border-0 shadow-sm text-center py-5 px-3">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <h2 class="card-title mb-3">Planetarium Hamburg</h2>
+                        <p class="card-text fs-5">Reise zu den Sternen! Eines der ältesten und modernsten Sternentheater
+                            der Welt im alten Wasserturm.</p>
+                        <div class="mt-3">
+                            <span class="badge" style="background-color: #87CEEB; color: black;">Luft</span>
+                        </div>
+                        <a href="https://www.planetarium-hamburg.de/" target="_blank"
+                            class="btn btn-orange mt-4 text-white">Webseite
+                            besuchen</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Attraction 4 -->
+            <div class="col-12 col-lg-6">
+                <div class="card h-100 bg-secondary-subtle border-0 shadow-sm text-center py-5 px-3">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <h2 class="card-title mb-3">Ozeaneum Stralsund</h2>
+                        <p class="card-text fs-5">Tauche ab in die Ostsee! Faszinierende Unterwasserwelten und riesige
+                            Wale in der Ausstellung.</p>
+                        <div class="mt-3">
+                            <span class="badge bg-primary text-white">Wasser</span>
+                        </div>
+                        <a href="https://www.ozeaneum.de/" target="_blank"
+                            class="btn btn-orange mt-4 text-white">Webseite
+                            besuchen</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

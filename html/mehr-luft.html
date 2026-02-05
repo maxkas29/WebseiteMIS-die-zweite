@@ -13,68 +13,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/animations.css">
-    <style>
-        body {
-            background-color: var(--color-mint-light);
-        }
 
-        .theme-header {
-            background-color: var(--color-teal-dark);
-            color: white;
-            padding: 3rem 0;
-            margin-bottom: 2rem;
-            border-bottom-left-radius: 50% 20px;
-            border-bottom-right-radius: 50% 20px;
-        }
-
-        .animal-circle {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            background-color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto;
-            border: 5px solid white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, border-color 0.3s ease;
-            overflow: hidden;
-            cursor: pointer;
-        }
-
-        .animal-circle:hover {
-            transform: scale(1.1);
-            border-color: var(--color-orange);
-        }
-
-        .animal-circle img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .animal-name {
-            font-family: var(--font-heading);
-            font-size: 1.5rem;
-            color: var(--color-blue-dark);
-            margin-top: 1rem;
-        }
-
-        .modal-header {
-            background-color: var(--color-teal-dark);
-            color: white;
-            border-bottom: none;
-        }
-
-        .modal-body {
-            background-color: #f8f9fa;
-        }
-
-        .btn-close-white {
-            filter: invert(1) grayscale(100%) brightness(200%);
-        }
-    </style>
 </head>
 
 <body>
@@ -92,7 +31,7 @@
     </div>
 
     <!-- Header -->
-    <header class="theme-header text-center">
+    <header class="text-center mt-5 pt-5">
         <div class="container">
             <p class="fs-4 mb-0" style="font-family: var(--font-body);">Mehr zu dem Thema</p>
             <h1 class="display-3" style="font-family: var(--font-heading);">Die Luft</h1>
@@ -106,7 +45,7 @@
             <!-- Animal 1 -->
             <div class="col-6 col-md-3 text-center">
                 <div class="animal-circle" data-bs-toggle="modal" data-bs-target="#modalAnimal1">
-                    <img src="https://placehold.co/150x150?text=Adler" alt="Adler">
+                    <div class="display-1">🦅</div>
                 </div>
                 <div class="animal-name">Adler</div>
             </div>
@@ -114,7 +53,7 @@
             <!-- Animal 2 -->
             <div class="col-6 col-md-3 text-center">
                 <div class="animal-circle" data-bs-toggle="modal" data-bs-target="#modalAnimal2">
-                    <img src="https://placehold.co/150x150?text=Schmetterling" alt="Schmetterling">
+                    <div class="display-1">🦋</div>
                 </div>
                 <div class="animal-name">Schmetterling</div>
             </div>
@@ -122,7 +61,7 @@
             <!-- Animal 3 -->
             <div class="col-6 col-md-3 text-center">
                 <div class="animal-circle" data-bs-toggle="modal" data-bs-target="#modalAnimal3">
-                    <img src="https://placehold.co/150x150?text=Eule" alt="Eule">
+                    <div class="display-1">🦉</div>
                 </div>
                 <div class="animal-name">Eule</div>
             </div>
@@ -130,7 +69,7 @@
             <!-- Animal 4 -->
             <div class="col-6 col-md-3 text-center">
                 <div class="animal-circle" data-bs-toggle="modal" data-bs-target="#modalAnimal4">
-                    <img src="https://placehold.co/150x150?text=Biene" alt="Biene">
+                    <div class="display-1">🐝</div>
                 </div>
                 <div class="animal-name">Biene</div>
             </div>
@@ -142,7 +81,7 @@
     <!-- Modals -->
 
     <!-- Modal 1 -->
-    <div class="modal fade" id="modalAnimal1" tabindex="-1" aria-hidden="true">
+    <div class="modal fade modal-xl" id="modalAnimal1" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -151,8 +90,7 @@
                         aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-center p-4">
-                    <img src="https://placehold.co/400x300?text=Adler" class="img-fluid rounded mb-3 shadow-sm"
-                        alt="Adler">
+                    <div class="display-1 mb-3">🦅</div>
                     <p class="text-start">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                         eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
                 </div>
@@ -161,7 +99,7 @@
     </div>
 
     <!-- Modal 2 -->
-    <div class="modal fade" id="modalAnimal2" tabindex="-1" aria-hidden="true">
+    <div class="modal fade modal-xl" id="modalAnimal2" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -170,8 +108,7 @@
                         aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-center p-4">
-                    <img src="https://placehold.co/400x300?text=Schmetterling" class="img-fluid rounded mb-3 shadow-sm"
-                        alt="Schmetterling">
+                    <div class="display-1 mb-3">🦋</div>
                     <p class="text-start">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                         eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
                 </div>
@@ -180,7 +117,7 @@
     </div>
 
     <!-- Modal 3 -->
-    <div class="modal fade" id="modalAnimal3" tabindex="-1" aria-hidden="true">
+    <div class="modal fade modal-xl" id="modalAnimal3" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -189,8 +126,7 @@
                         aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-center p-4">
-                    <img src="https://placehold.co/400x300?text=Eule" class="img-fluid rounded mb-3 shadow-sm"
-                        alt="Eule">
+                    <div class="display-1 mb-3">🦉</div>
                     <p class="text-start">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                         eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
                 </div>
@@ -199,7 +135,7 @@
     </div>
 
     <!-- Modal 4 -->
-    <div class="modal fade" id="modalAnimal4" tabindex="-1" aria-hidden="true">
+    <div class="modal fade modal-xl" id="modalAnimal4" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -208,8 +144,7 @@
                         aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-center p-4">
-                    <img src="https://placehold.co/400x300?text=Biene" class="img-fluid rounded mb-3 shadow-sm"
-                        alt="Biene">
+                    <div class="display-1 mb-3">🐝</div>
                     <p class="text-start">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                         eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
                 </div>
@@ -218,8 +153,11 @@
     </div>
 
     <!-- Footer -->
-    <footer class="text-center py-4" style="color: var(--color-blue-dark);">
-        <p>&copy; 2025 Natur Hautnah</p>
+    <footer class="text-center mt-5 pb-3 fixed-bottom">
+        <div class="container d-flex justify-content-between text-white small-text">
+            <span>&copy; 2025 Natur Hautnah</span>
+            <a href="html/impressum.html" class="text-white text-decoration-none">Impressum</a>
+        </div>
     </footer>
 
     <!-- Bootstrap JS -->

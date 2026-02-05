@@ -8,91 +8,100 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Comic+Neue:wght@700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/animations.css">
 </head>
 
 <body class="erde-page">
+    <div class="erde-wrapper">
 
-    <!-- Navigation / Back Button -->
-    <div class="fixed-top p-3">
-        <a href="../index.html" class="btn btn-orange rounded-circle  shadow p-3"
-            style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                class="bi bi-house-door-fill" viewBox="0 0 16 16" style="color: white;">
-                <path
-                    d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5" />
-            </svg>
-        </a>
-    </div>
-
-    <!-- Title Section (Surface) -->
-    <div
-        class="container-fluid min-vh-100 d-flex flex-column align-items-center justify-content-start pt-5 text-center text-white text-shadow-dark">
-        <h1 class="font-heading display-1 mt-5" style="color: white; text-shadow: 2px 2px 4px #4e342e;">Die Erde</h1>
-        <p class="fs-3 text-white" style="text-shadow: 1px 1px 2px #4e342e;">Scrolle nach unten, um in den Boden zu
-            schauen!</p>
-        <div class="mt-5 animate-bounce">
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white"
-                class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
-                <path
-                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 7.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
-            </svg>
-        </div>
-    </div>
-
-    <!-- Depth Zone 1: Roots & Worms -->
-    <div class="container min-vh-100 d-flex align-items-center justify-content-start">
-        <div class="info-card p-4 rounded shadow bg-white" style="max-width: 500px; opacity: 0.9;">
-            <h2 style="color: var(--color-erde-text); font-family: var(--font-heading);">Wurzeln & Würmer</h2>
-            <p>Direkt unter dem Gras ist ganz schön was los! Insekten, Regenwürmer und die Wurzeln der Bäume teilen sich
-                diesen Platz.</p>
-            <img src="https://placehold.co/400x200?text=Wurzeln+und+Würmer" class="img-fluid rounded mt-2"
-                alt="Wurzeln">
-        </div>
-    </div>
-
-    <!-- Depth Zone 2: Stones & Caves -->
-    <div class="container min-vh-100 d-flex align-items-center justify-content-end">
-        <div class="info-card p-4 rounded shadow bg-white" style="max-width: 500px; opacity: 0.9;">
-            <h2 style="color: #5d4037; font-family: var(--font-heading);">Steine & Höhlen</h2>
-            <p>Weiter unten wird die Erde fester. Hier findest du große Steine und manchmal sogar versteckte Höhlen!</p>
-            <img src="https://placehold.co/400x200?text=Höhle" class="img-fluid rounded mt-2" alt="Höhle">
-        </div>
-    </div>
-
-    <!-- Depth Zone 3: Deep Earth / Magma -->
-    <div class="container min-vh-100 d-flex flex-column align-items-center justify-content-center">
-        <div class="info-card p-4 rounded shadow bg-white" style="max-width: 600px; opacity: 0.9;">
-            <h2 style="color: #bf360c; font-family: var(--font-heading);">Tief im Inneren</h2>
-            <p>Ganz tief unten wird es richtig heiß! Hier gibt es Schätze wie Edelsteine oder Fossilien von
-                Dinosauriern.</p>
-            <img src="https://placehold.co/400x200?text=Schatz+oder+Fossil" class="img-fluid rounded mt-2" alt="Schatz">
+        <!-- Navigation / Back Button -->
+        <div class="fixed-top p-3">
+            <a href="../index.html" class="btn btn-orange rounded-circle  shadow p-3"
+                style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                <span class="material-symbols-outlined" style="font-size: 32px; color: white;">home</span>
+            </a>
         </div>
 
+        <!-- Title Section (Surface) -->
+        <div
+            class="container-fluid min-vh-100 d-flex flex-column align-items-center justify-content-center pt-5 text-center text-white text-shadow-dark">
+            <h1 class="font-heading display-1 mt-5" style="color: white; text-shadow: 2px 2px 4px #4e342e;">Die Erde
+            </h1>
+            <p class="fs-3 text-white" style="text-shadow: 1px 1px 2px #4e342e;">Scrolle nach unten, um in den Boden zu
+                schauen!</p>
+            <div class="mt-5 animate-bounce">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white"
+                    class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 7.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+                </svg>
+            </div>
+        </div>
 
-    </div>
-    <div class="mt-5 text-center">
-        <a href="mehr-erde.html" class="btn btn-orange btn-lg rounded-pill shadow px-5 py-3">
-            Entdecke mehr
-        </a>
-    </div>
-    <!-- Footer -->
-    <footer class="text-center py-4 text-white">
-        <p>&copy; 2025 Natur Hautnah - <a href="impressum.html" class="text-white">Impressum</a></p>
-    </footer>
+        <!-- Depth Zone 1: Grass Layer -->
+        <div class="container min-vh-100 d-flex align-items-center justify-content-start">
+            <div class="info-card p-4 rounded shadow bg-white" style="max-width: 500px; opacity: 0.9;">
+                <h2 style="color: var(--color-erde-text); font-family: var(--font-heading);">Die Grasnarbe (0 - 1m)</h2>
+                <p>Direkt unter unseren Füßen! Hier krabbeln fleißige <strong>Ameisen</strong>, kugelrunde
+                    <strong>Käfer</strong> und kleine Spinnen durch das Gras und das Moos.
+                </p>
+                <img src="https://placehold.co/400x200?text=Ameisen+und+Käfer" class="img-fluid rounded mt-2"
+                    alt="Wurzeln">
+            </div>
+        </div>
+
+        <!-- Depth Zone 2: Root System -->
+        <div class="container min-vh-100 d-flex align-items-center justify-content-end">
+            <div class="info-card p-4 rounded shadow bg-white" style="max-width: 500px; opacity: 0.9;">
+                <h2 style="color: #5d4037; font-family: var(--font-heading);">Der Wurzelraum (1m - 5m)</h2>
+                <p>Hier graben sich <strong>Maulwürfe</strong> ihre Gänge und <strong>Regenwürmer</strong> lockern die
+                    Erde
+                    auf. Auch Füchse bauen hier ihre gemütlichen Höhlen.</p>
+                <img src="https://placehold.co/400x200?text=Maulwurf+und+Wurzeln" class="img-fluid rounded mt-2"
+                    alt="Höhle">
+            </div>
+        </div>
+
+        <!-- Depth Zone 3: Rock Layer -->
+        <div class="container min-vh-100 d-flex align-items-center justify-content-start">
+            <div class="info-card p-4 rounded shadow bg-white" style="max-width: 600px; opacity: 0.9;">
+                <h2 style="color: #bf360c; font-family: var(--font-heading);">Die Gesteinsschicht (5m - 50m)</h2>
+                <p>Hier fließt unser sauberes Grundwasser durch den Stein. In tiefen Höhlen schlafen
+                    <strong>Fledermäuse</strong> und im Wasser leben blinde <strong>Grottenolme</strong>.
+                </p>
+                <img src="https://placehold.co/400x200?text=Fledermaus+und+Höhle" class="img-fluid rounded mt-2"
+                    alt="Schatz">
+            </div>
+        </div>
+
+        <!-- Depth Zone 4: Inner Earth -->
+        <div class="container min-vh-100 d-flex flex-column align-items-end justify-content-center">
+            <div class="info-card p-4 rounded shadow bg-white" style="max-width: 600px; opacity: 0.9;">
+                <h2 style="color: #3e2723; font-family: var(--font-heading);">Das Innere der Erde (Tief!)</h2>
+                <p>Hier wird es richtig heiß! Es gibt flüssiges Gestein (Magma), funkelnde <strong>Edelsteine</strong>
+                    und
+                    uralte <strong>Fossilien</strong> von Dinosauriern.</p>
+                <img src="https://placehold.co/400x200?text=Magma+und+Fossilien" class="img-fluid rounded mt-2"
+                    alt="Inneres">
+            </div>
+        </div>
+        <div class="mt-5 text-center">
+            <a href="mehr-erde.html" class="btn btn-orange btn-lg rounded-pill shadow px-5 py-3">
+                Entdecke mehr
+            </a>
+        </div>
+        <!-- Footer -->
+        <footer class="text-center py-4 text-white">
+            <p>&copy; 2025 Natur Hautnah - <a href="impressum.html" class="text-white">Impressum</a></p>
+        </footer>
+
+    </div> <!-- End of .erde-wrapper -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('show-modal');
-                }
-            });
-        });
-        document.querySelectorAll('.info-card').forEach((el) => observer.observe(el));
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
