@@ -17,7 +17,30 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../style/style.css">
 
+    <style>
+        /* Minimal custom styles for fonts as requested, layout relies on Bootstrap */
+        :root {
+            --font-heading: 'Chewy', cursive;
+            --font-body: 'Comic Neue', cursive;
+        }
 
+        body {
+            font-family: var(--font-body);
+            background-color: var(--color-mint-light);
+            /* Theme background */
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: var(--font-heading);
+            color: var(--color-blue-dark);
+        }
+
+        .theme-orange-text {
+            color: var(--color-orange);
+        }
+    </style>
 </head>
 
 <body>
@@ -37,24 +60,7 @@
         <!-- Header Section -->
         <div class="row mb-5">
             <div class="col-12 text-center">
-                <h1 class="display-3 main-title theme-orange-text">Die Natur Hautnah Erleben</h1>
-            </div>
-
-            <!-- Filter Section -->
-            <div
-                class="col-12 text-center mt-4 d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
-                <h3 class="mb-2 mb-md-0 me-md-2"
-                    style="font-family: var(--font-heading); color: var(--color-blue-dark);">Filter:
-                </h3>
-
-                <button class="btn btn-outline-dark rounded-pill px-4 py-2 filter-btn active" data-filter="all"
-                    style="font-family: var(--font-heading);">Alle</button>
-                <button class="btn btn-outline-success rounded-pill px-4 py-2 filter-btn" data-filter="erde"
-                    style="font-family: var(--font-heading);">Erde</button>
-                <button class="btn btn-outline-primary rounded-pill px-4 py-2 filter-btn" data-filter="wasser"
-                    style="font-family: var(--font-heading);">Wasser</button>
-                <button class="btn btn-outline-info rounded-pill px-4 py-2 filter-btn" data-filter="luft"
-                    style="font-family: var(--font-heading);">Luft</button>
+                <h1 class="display-3 theme-orange-text">Die Natur Hautnah Erleben</h1>
             </div>
         </div>
 
@@ -62,13 +68,15 @@
         <div class="row g-4">
 
             <!-- Attraction 1 -->
-            <div class="col-12 col-lg-6 filter-item" data-category="erde">
+            <div class="col-12 col-lg-6">
                 <div class="card h-100 bg-secondary-subtle border-0 shadow-sm text-center py-5 px-3 ">
                     <div class="card-body d-flex flex-column justify-content-center align-items-center">
                         <h2 class="card-title mb-3">Dinosaurier-Park Münchehagen</h2>
                         <p class="card-text fs-5">Wandere auf echten Dinosaurier-Spuren! Ein riesiges Freilichtmuseum
                             mit lebensgroßen Dinos.</p>
-                        
+                        <div class="mt-3">
+                            <span class="badge bg-success text-white">Erde</span>
+                        </div>
                         <a href="https://www.dinopark.de/" target="_blank"
                             class="btn btn-orange mt-4 text-white">Webseite
                             besuchen</a>
@@ -77,13 +85,15 @@
             </div>
 
             <!-- Attraction 2 -->
-            <div class="col-12 col-lg-6 filter-item" data-category="erde">
+            <div class="col-12 col-lg-6">
                 <div class="card h-100 bg-secondary-subtle border-0 shadow-sm text-center py-5 px-3">
                     <div class="card-body d-flex flex-column justify-content-center align-items-center">
                         <h2 class="card-title mb-3">Erlebnis-Zoo Hannover</h2>
                         <p class="card-text fs-5">Weltreise an einem Tag! Entdecke Tiere aus Afrika, Kanada und Indien
                             in spektakulären Themenwelten.</p>
-                        
+                        <div class="mt-3">
+                            <span class="badge bg-success text-white">Erde</span>
+                        </div>
                         <a href="https://www.erlebnis-zoo.de/" target="_blank"
                             class="btn btn-orange mt-4 text-white">Webseite
                             besuchen</a>
@@ -92,13 +102,15 @@
             </div>
 
             <!-- Attraction 3 -->
-            <div class="col-12 col-lg-6 filter-item" data-category="luft">
+            <div class="col-12 col-lg-6">
                 <div class="card h-100 bg-secondary-subtle border-0 shadow-sm text-center py-5 px-3">
                     <div class="card-body d-flex flex-column justify-content-center align-items-center">
                         <h2 class="card-title mb-3">Planetarium Hamburg</h2>
                         <p class="card-text fs-5">Reise zu den Sternen! Eines der ältesten und modernsten Sternentheater
                             der Welt im alten Wasserturm.</p>
-                        
+                        <div class="mt-3">
+                            <span class="badge" style="background-color: #87CEEB; color: black;">Luft</span>
+                        </div>
                         <a href="https://www.planetarium-hamburg.de/" target="_blank"
                             class="btn btn-orange mt-4 text-white">Webseite
                             besuchen</a>
@@ -107,13 +119,15 @@
             </div>
 
             <!-- Attraction 4 -->
-            <div class="col-12 col-lg-6 filter-item" data-category="wasser">
+            <div class="col-12 col-lg-6">
                 <div class="card h-100 bg-secondary-subtle border-0 shadow-sm text-center py-5 px-3">
                     <div class="card-body d-flex flex-column justify-content-center align-items-center">
                         <h2 class="card-title mb-3">Ozeaneum Stralsund</h2>
                         <p class="card-text fs-5">Tauche ab in die Ostsee! Faszinierende Unterwasserwelten und riesige
                             Wale in der Ausstellung.</p>
-                        
+                        <div class="mt-3">
+                            <span class="badge bg-primary text-white">Wasser</span>
+                        </div>
                         <a href="https://www.ozeaneum.de/" target="_blank"
                             class="btn btn-orange mt-4 text-white">Webseite
                             besuchen</a>
@@ -126,8 +140,6 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Filter Script -->
-    <script src="../assets/js/filter.js"></script>
 </body>
 
 </html>

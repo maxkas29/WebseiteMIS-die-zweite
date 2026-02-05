@@ -26,18 +26,15 @@
         </div>
 
         <!-- Title Section (Surface) -->
-        <div
-            class="container-fluid min-vh-100 d-flex flex-column align-items-center justify-content-center pt-5 text-center text-white text-shadow-dark">
-            <h1 class="font-heading display-1 mt-5" style="color: white; text-shadow: 2px 2px 4px #4e342e;">Die Erde
+        <div class="container-fluid min-vh-100 d-flex flex-column align-items-center justify-content-center pt-5 text-center text-white text-shadow-dark"
+            style="background: rgba(255, 255, 255, 0.2);">
+            <h1 class="font-heading display-1 mt-5"
+                style="font-family: var(--font-heading); color: white; text-shadow: 2px 2px 4px #4e342e;">Die Erde
             </h1>
             <p class="fs-3 text-white" style="text-shadow: 1px 1px 2px #4e342e;">Scrolle nach unten, um in den Boden zu
                 schauen!</p>
             <div class="mt-5 animate-bounce">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white"
-                    class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
-                    <path
-                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 7.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
-                </svg>
+                <span class="material-symbols-outlined" style="font-size: 48px; color: white;">arrow_circle_down</span>
             </div>
         </div>
 
@@ -48,8 +45,32 @@
                 <p>Direkt unter unseren Füßen! Hier krabbeln fleißige <strong>Ameisen</strong>, kugelrunde
                     <strong>Käfer</strong> und kleine Spinnen durch das Gras und das Moos.
                 </p>
-                <img src="https://placehold.co/400x200?text=Ameisen+und+Käfer" class="img-fluid rounded mt-2"
-                    alt="Wurzeln">
+                <div id="carousel-erde-1" class="carousel slide mt-2" data-bs-ride="carousel">
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active">
+                            <img src="https://placehold.co/400x200?text=Ameisen+und+Käfer" class="d-block w-100"
+                                alt="Wurzeln">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://placehold.co/400x200?text=Grashüpfer" class="d-block w-100"
+                                alt="Grashüpfer">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://placehold.co/400x200?text=Moos+und+Gras" class="d-block w-100"
+                                alt="Moos und Gras">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-erde-1"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Zurück</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-erde-1"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Weiter</span>
+                    </button>
+                </div>
             </div>
         </div>
 
@@ -60,8 +81,31 @@
                 <p>Hier graben sich <strong>Maulwürfe</strong> ihre Gänge und <strong>Regenwürmer</strong> lockern die
                     Erde
                     auf. Auch Füchse bauen hier ihre gemütlichen Höhlen.</p>
-                <img src="https://placehold.co/400x200?text=Maulwurf+und+Wurzeln" class="img-fluid rounded mt-2"
-                    alt="Höhle">
+                <div id="carousel-erde-2" class="carousel slide mt-2" data-bs-ride="carousel">
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active">
+                            <img src="https://placehold.co/400x200?text=Maulwurf+und+Wurzeln" class="d-block w-100"
+                                alt="Höhle">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://placehold.co/400x200?text=Fuchsbau" class="d-block w-100" alt="Fuchsbau">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://placehold.co/400x200?text=Baumwurzeln" class="d-block w-100"
+                                alt="Baumwurzeln">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-erde-2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Zurück</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-erde-2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Weiter</span>
+                    </button>
+                </div>
             </div>
         </div>
 
@@ -72,8 +116,32 @@
                 <p>Hier fließt unser sauberes Grundwasser durch den Stein. In tiefen Höhlen schlafen
                     <strong>Fledermäuse</strong> und im Wasser leben blinde <strong>Grottenolme</strong>.
                 </p>
-                <img src="https://placehold.co/400x200?text=Fledermaus+und+Höhle" class="img-fluid rounded mt-2"
-                    alt="Schatz">
+                <div id="carousel-erde-3" class="carousel slide mt-2" data-bs-ride="carousel">
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active">
+                            <img src="https://placehold.co/400x200?text=Fledermaus+und+Höhle" class="d-block w-100"
+                                alt="Schatz">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://placehold.co/400x200?text=Tropfsteinhöhle" class="d-block w-100"
+                                alt="Tropfsteinhöhle">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://placehold.co/400x200?text=Grundwasser" class="d-block w-100"
+                                alt="Grundwasser">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-erde-3"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Zurück</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-erde-3"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Weiter</span>
+                    </button>
+                </div>
             </div>
         </div>
 
@@ -84,8 +152,32 @@
                 <p>Hier wird es richtig heiß! Es gibt flüssiges Gestein (Magma), funkelnde <strong>Edelsteine</strong>
                     und
                     uralte <strong>Fossilien</strong> von Dinosauriern.</p>
-                <img src="https://placehold.co/400x200?text=Magma+und+Fossilien" class="img-fluid rounded mt-2"
-                    alt="Inneres">
+                <div id="carousel-erde-4" class="carousel slide mt-2" data-bs-ride="carousel">
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active">
+                            <img src="https://placehold.co/400x200?text=Magma+und+Fossilien" class="d-block w-100"
+                                alt="Inneres">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://placehold.co/400x200?text=Kristalle" class="d-block w-100"
+                                alt="Kristalle">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://placehold.co/400x200?text=Dino-Knochen" class="d-block w-100"
+                                alt="Dino-Knochen">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-erde-4"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Zurück</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-erde-4"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Weiter</span>
+                    </button>
+                </div>
             </div>
         </div>
         <div class="mt-5 text-center">
