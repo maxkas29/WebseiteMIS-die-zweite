@@ -1,0 +1,24 @@
+#!/bin/bash
+mv Gemini_Generated_Image_1xqu8z1xqu8z1xqu.png meeresschildkroete.png
+mv Gemini_Generated_Image_3ssh9i3ssh9i3ssh.png pfauenauge.png
+mv Gemini_Generated_Image_45evwf45evwf45ev.png falke.png
+mv Gemini_Generated_Image_5utx8a5utx8a5utx.png pottwal_oberflaeche.png
+mv Gemini_Generated_Image_apt9wrapt9wrapt9.png heuschrecke.png
+mv Gemini_Generated_Image_cssq57cssq57cssq.png pottwal_unterwasser.png
+mv Gemini_Generated_Image_e1hxize1hxize1hx.png geier.png
+mv Gemini_Generated_Image_emyo8demyo8demyo.png delfin.png
+mv Gemini_Generated_Image_f657uef657uef657.png qualle.png
+mv Gemini_Generated_Image_gpjen3gpjen3gpje.png seegurke.png
+mv Gemini_Generated_Image_jb7m48jb7m48jb7m.png anglerfisch.png
+mv Gemini_Generated_Image_jtjmm6jtjmm6jtjm.png fledermaus.png
+mv Gemini_Generated_Image_ldsbmfldsbmfldsb.png vampirtintenfisch.png
+mv Gemini_Generated_Image_o31orno31orno31o.png tropische_fische.png
+mv Gemini_Generated_Image_q29bwoq29bwoq29b.png biene.png
+mv "Gemini_Generated_Image_qdnk1pqdnk1pqdnk (1).png" rotkehlchen_1.png
+mv Gemini_Generated_Image_qdnk1pqdnk1pqdnk.png rotkehlchen_2.png
+mv Gemini_Generated_Image_qp7kaqp7kaqp7kaq.png roehrenwurm.png
+mv Gemini_Generated_Image_tf4uzftf4uzftf4u.png maulwurf.png
+mv Gemini_Generated_Image_xbtjxjxbtjxjxbtj.png fuchs_bau.png
+mv Gemini_Generated_Image_y2silry2silry2si.png riesenkalmar.png
+mv KaeferArmeisen.png kaefer_ameisen.png
+rm gallery_temp.html
