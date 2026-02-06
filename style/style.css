@@ -196,7 +196,7 @@ body.erde-page {
 }
 
 .erde-wrapper {
-    background: url('../assets/img/background/earth_vertical.png');
+    background: url('../assets/img/background/hintergrund-erde.jpg');
     background-size: auto 100%;
     background-repeat: repeat-x;
     background-position: center top;
@@ -213,7 +213,7 @@ body.luft-page {
 }
 
 .luft-wrapper {
-    background: url('../assets/img/background/air_vertical.png');
+    background: url('../assets/img/background/hintergrund-luft.jpg');
     background-size: auto 100%;
     background-repeat: repeat-x;
     background-position: center bottom;
