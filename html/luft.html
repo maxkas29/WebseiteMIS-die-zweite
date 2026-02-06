@@ -17,7 +17,7 @@
 <body class="luft-page">
     <div class="luft-wrapper">
 
-        <!-- Navigation / Back Button -->
+
         <div class="fixed-top p-3" style="z-index: 1000;">
             <a href="../index.html" class="btn btn-orange rounded-circle shadow p-3"
                 style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
@@ -25,18 +25,13 @@
             </a>
         </div>
 
-        <!-- Content Wrapper Reordered for logical "Up" scrolling visually, 
-         but technically we scroll down to see "higher" things since browser scrolling is top-down.
-         WAIT: User asked to scroll from BOTTOM to TOP.
-         Standard browsers load at top. So top should be "Space" and bottom should be "Ground".
-         We will use JS to scroll to bottom on load.
-    -->
+
         <div class="mt-5 text-center" style="margin-top: 100px !important;">
             <a href="mehr-luft.html" class="btn btn-orange btn-lg rounded-pill shadow px-5 py-3">
                 Entdecke mehr
             </a>
         </div>
-        <!-- Zone 4: Deep Space (Top) -->
+
         <div class="container min-vh-100 d-flex flex-column align-items-end justify-content-center">
             <div class="info-card p-4 rounded shadow bg-white" style="max-width: 600px; opacity: 0.9;">
                 <h2 style="color: #1a237e; font-family: var(--font-heading);">Der Weltraum (ab 100km)</h2>
@@ -46,16 +41,11 @@
                 <div id="carousel-luft-4" class="carousel slide mt-2" data-bs-ride="carousel">
                     <div class="carousel-inner rounded">
                         <div class="carousel-item active">
-                            <img src="https://placehold.co/400x200?text=Satelliten+und+ISS" class="d-block w-100"
-                                alt="Weltraum">
+                            <img src="../assets/img/iss.jpg" class=" d-block w-100" alt="Weltraum">
                         </div>
+
                         <div class="carousel-item">
-                            <img src="https://placehold.co/400x200?text=Raumstation" class="d-block w-100"
-                                alt="Raumstation">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://placehold.co/400x200?text=Erde+von+oben" class="d-block w-100"
-                                alt="Erde von oben">
+                            <img src="../assets/img/erde.jpg" class="d-block w-100" alt="Erde von oben">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carousel-luft-4"
@@ -72,7 +62,7 @@
             </div>
         </div>
 
-        <!-- Zone 3: Stratosphere -->
+
         <div class="container min-vh-100 d-flex align-items-center justify-content-start">
             <div class="info-card p-4 rounded shadow bg-white" style="max-width: 500px; opacity: 0.9;">
                 <h2 style="color: #283593; font-family: var(--font-heading);">Die Stratosphäre (10km - 50km)</h2>
@@ -81,16 +71,12 @@
                 <div id="carousel-luft-3" class="carousel slide mt-2" data-bs-ride="carousel">
                     <div class="carousel-inner rounded">
                         <div class="carousel-item active">
-                            <img src="https://placehold.co/400x200?text=Wetterballon" class="d-block w-100"
-                                alt="Stratosphäre">
+                            <img src="../assets/img/wetterbalon.jpg" class="d-block w-100" alt="Wetterballon">
                         </div>
                         <div class="carousel-item">
-                            <img src="../assets/img/geier.png" class="d-block w-100" alt="Gänsegeier">
+                            <img src="../assets/img/geier.jpg" class="d-block w-100" alt="Gänsegeier">
                         </div>
-                        <div class="carousel-item">
-                            <img src="https://placehold.co/400x200?text=Dünne+Luft" class="d-block w-100"
-                                alt="Dünne Luft">
-                        </div>
+
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carousel-luft-3"
                         data-bs-slide="prev">
@@ -106,7 +92,7 @@
             </div>
         </div>
 
-        <!-- Zone 2: High Sky / Clouds -->
+
         <div class="container min-vh-100 d-flex align-items-center justify-content-end">
             <div class="info-card p-4 rounded shadow bg-white" style="max-width: 500px; opacity: 0.9;">
                 <h2 style="color: #0277bd; font-family: var(--font-heading);">Der Himmel & Wolken (500m - 10km)</h2>
@@ -116,18 +102,11 @@
                 <div id="carousel-luft-2" class="carousel slide mt-2" data-bs-ride="carousel">
                     <div class="carousel-inner rounded">
                         <div class="carousel-item active">
-                            <img src="../assets/img/falke.png" class="d-block w-100" alt="Wanderfalke">
+                            <img src="../assets/img/falke.jpg" class="d-block w-100" alt="Wanderfalke">
                         </div>
-                        <div class="carousel-item">
-                            <img src="https://placehold.co/400x200?text=Segelflieger" class="d-block w-100"
-                                alt="Segelflieger">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://placehold.co/400x200?text=Wolkenformation" class="d-block w-100"
-                                alt="Wolkenformation">
-                        </div>
+
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-luft-2"
+                    <button class="carouS-control-prev" type="button" data-bs-target="#carousel-luft-2"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Zurück</span>
@@ -141,7 +120,7 @@
             </div>
         </div>
 
-        <!-- Zone 1: Near Ground -->
+
         <div class="container min-vh-100 d-flex align-items-center justify-content-start">
             <div class="info-card p-4 rounded shadow bg-white" style="max-width: 500px; opacity: 0.9;">
                 <h2 style="color: #0288d1; font-family: var(--font-heading);">Bodennähe (0 - 500m)</h2>
@@ -151,13 +130,13 @@
                 <div id="carousel-luft-1" class="carousel slide mt-2" data-bs-ride="carousel">
                     <div class="carousel-inner rounded">
                         <div class="carousel-item active">
-                            <img src="../assets/img/pfauenauge.png" class="d-block w-100" alt="Schmetterling">
+                            <img src="../assets/img/pfauenauge.jpg" class="d-block w-100" alt="Schmetterling">
                         </div>
                         <div class="carousel-item">
-                            <img src="../assets/img/rotkehlchen_1.png" class="d-block w-100" alt="Rotkehlchen">
+                            <img src="../assets/img/rotkehlchen_1.jpg" class="d-block w-100" alt="Rotkehlchen">
                         </div>
                         <div class="carousel-item">
-                            <img src="../assets/img/biene.png" class="d-block w-100" alt="Biene">
+                            <img src="../assets/img/biene.jpg" class="d-block w-100" alt="Biene">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carousel-luft-1"
@@ -174,7 +153,7 @@
             </div>
         </div>
 
-        <!-- Start / Ground Section (Bottom of the page, Start of journey) -->
+
         <div class="container-fluid min-vh-100 d-flex flex-column align-items-center justify-content-center pb-5 text-center text-white"
             style="background: rgba(255, 255, 255, 0.2);"">
             <div class=" mb-5 pb-5">
@@ -187,12 +166,12 @@
         </div>
     </div>
 
-    <!-- Footer -->
+
     <footer class="text-center py-4 text-white">
         <p>&copy; 2025 Natur Hautnah - <a href="impressum.html" class="text-white">Impressum</a></p>
     </footer>
 
-    </div> <!-- End of .luft-wrapper -->
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>

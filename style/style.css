@@ -35,7 +35,7 @@ body {
     font-family: var(--font-heading);
     font-size: 1.5rem;
     color: white;
-    /* Contrast against sky */
+    
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     margin-bottom: 3rem;
 }
@@ -68,7 +68,7 @@ body {
 
 }
 
-/* Specific Theme Styles */
+
 .border-erde {
     background-color: transparent;
     border-color: transparent;
@@ -100,7 +100,7 @@ body {
     font-family: var(--font-heading);
     font-size: 2rem;
     margin-top: 20px;
-    /* Space between circle and text */
+    
     text-align: center;
     width: 100%;
 }
@@ -189,7 +189,7 @@ body.wasser-page {
     margin-top: 7rem;
 }
 
-/* Erde  Styles */
+
 body.erde-page {
     background: none;
     min-height: 100vh;
@@ -206,7 +206,7 @@ body.erde-page {
     flex-direction: column;
 }
 
-/* Luft  Styles */
+
 body.luft-page {
     background: none;
     min-height: 100vh;
